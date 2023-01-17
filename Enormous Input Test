@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int n,k,flag=0;
+    cin>>n>>k;
+    long long int arr[n];
+    for(long long int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(long long int i=0;i<n;i++)
+    {
+        if(arr[i]%k==0)
+        {
+            flag++;
+        }
+    }
+    cout<<flag<<endl;
+    return 0;
+}
