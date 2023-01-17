@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+void solve();
+int main()
+{
+    long long int t;
+    cin>>t;
+    while(t--)
+    {
+        solve();
+    }
+    return 0;
+}
+void solve()
+{
+
+    double a,b,c;
+    cin>>a>>b;
+    c=a*b;
+    if(a>1000)
+    {
+        double e=c*0.9;
+        cout<<fixed<<setprecision(6)<<e<<endl;
+    }
+    else
+    {
+        cout<<fixed<<setprecision(6)<<a*b<<endl;
+    }
+}
