@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+void solve();
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        solve();
+        
+    }
+}
+void solve()
+{
+    int a,b,p=0;
+    cin>>a>>b;
+    int z=b-a+1;
+    for(int i=a;i<=b;i++)
+    {
+        int num=i;
+        if(num==0)
+        {
+            p++;
+            continue;
+        }
+        else
+        {
+            while(num!=0)
+            {
+                int d=num%10;
+                if(d==0)
+                {
+                    p++;
+                    break;
+                }
+                num=num/10;
+            }
+        }
+    }
+    cout<<p<<"/"<<z<<endl;
+}
